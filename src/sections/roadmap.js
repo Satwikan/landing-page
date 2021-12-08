@@ -69,7 +69,7 @@ export default RoadMap;
 
 const styles = {
   section: {
-    mb: ['63px', '75px', null, '90px', '110px', null, '140px'],
+    mb: ['63px', '75px', null, '90px', '110px', null, '10px'],
     position: 'relative',
     backgroundColor: rgba('#FFF5ED', 0.5),
   },

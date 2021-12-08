@@ -7,10 +7,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SectionHeading from 'components/section-heading';
 import TeamMember from 'components/cards/team-member';
 
-import avatar1 from 'assets/images/team/member1.png';
-import avatar2 from 'assets/images/team/member2.png';
-import avatar3 from 'assets/images/team/member3.png';
-import avatar4 from 'assets/images/team/member4.png';
+import avatar1 from 'assets/images/team/vinit.png';
+import avatar2 from 'assets/images/team/daluram.png';
+import avatar3 from 'assets/images/team/satwik.png';
 import arrowRight from 'assets/images/icons/arrow-right.png';
 
 SwiperCore.use([Navigation, Pagination]);
@@ -19,147 +18,64 @@ const data = [
   {
     id: 1,
     avatar: avatar1,
-    name: 'Emmalee Mclain',
+    name: 'Vinit Kumar Shah',
     designation: 'Product Designer',
     socialLinks: [
       {
-        name: 'twitter',
-        link: 'http://twitter.com',
+        name: 'linkedin',
+        link: 'https://www.linkedin.com/in/vinit-kumar-shah-383a10197/',
       },
       {
         name: 'github',
-        link: 'http://github.com',
+        link: 'https://github.com/Vinit-Kumar-Shah',
       },
       {
-        name: 'dribbble',
-        link: 'http://dribbble.com',
+        name: 'twitter',
+        link: 'https://twitter.com/Vinit_K_Shah',
       },
     ],
   },
   {
     id: 2,
     avatar: avatar2,
-    name: 'Daisy Morgan',
-    designation: 'Lead developer',
+    name: 'Daluram Jat',
+    designation: 'FOUNDER',
     socialLinks: [
       {
-        name: 'twitter',
-        link: 'http://twitter.com',
+        name: 'linkedin',
+        link: 'https://www.linkedin.com/in/satwik-anmol-1487a3191/',
       },
       {
-        name: 'dribbble',
-        link: 'http://dribbble.com',
+        name: 'twitter',
+        link: 'https://twitter.com/jatdaluram_',
+      },
+      {
+        name: 'facebook',
+        link: 'https://www.facebook.com/daluram.jat',
       },
     ],
   },
   {
     id: 3,
     avatar: avatar3,
-    name: 'Ariyanna Hicks',
-    designation: 'Experience Designer',
-    socialLinks: [
-      {
-        name: 'twitter',
-        link: 'http://twitter.com',
-      },
-      {
-        name: 'github',
-        link: 'http://github.com',
-      },
-    ],
-  },
-  {
-    id: 4,
-    avatar: avatar4,
-    name: 'Yamilet Hooker',
-    designation: 'User interface designer',
-    socialLinks: [
-      {
-        name: 'twitter',
-        link: 'http://twitter.com',
-      },
-      {
-        name: 'github',
-        link: 'http://github.com',
-      },
-      {
-        name: 'dribbble',
-        link: 'http://dribbble.com',
-      },
-    ],
-  },
-  {
-    id: 5,
-    avatar: avatar1,
-    name: 'Emmalee Mclain',
+    name: 'Satwik Anmol',
     designation: 'Product Designer',
     socialLinks: [
       {
-        name: 'twitter',
-        link: 'http://twitter.com',
+        name: 'linkedin',
+        link: 'https://www.linkedin.com/in/daluram-jat-86324936/',
       },
       {
         name: 'github',
-        link: 'http://github.com',
+        link: 'https://github.com/satwikan',
       },
-      {
-        name: 'dribbble',
-        link: 'http://dribbble.com',
-      },
-    ],
-  },
-  {
-    id: 6,
-    avatar: avatar2,
-    name: 'Daisy Morgan',
-    designation: 'Lead developer',
-    socialLinks: [
       {
         name: 'twitter',
-        link: 'http://twitter.com',
-      },
-      {
-        name: 'dribbble',
-        link: 'http://dribbble.com',
+        link: 'https://twitter.com/satwikum',
       },
     ],
   },
-  {
-    id: 7,
-    avatar: avatar3,
-    name: 'Ariyanna Hicks',
-    designation: 'Experience Designer',
-    socialLinks: [
-      {
-        name: 'twitter',
-        link: 'http://twitter.com',
-      },
-      {
-        name: 'github',
-        link: 'http://github.com',
-      },
-    ],
-  },
-  {
-    id: 8,
-    avatar: avatar4,
-    name: 'Yamilet Hooker',
-    designation: 'User interface designer',
-    socialLinks: [
-      {
-        name: 'twitter',
-        link: 'http://twitter.com',
-      },
-      {
-        name: 'github',
-        link: 'http://github.com',
-      },
-      {
-        name: 'dribbble',
-        link: 'http://dribbble.com',
-      },
-    ],
-  },
+  
 ];
 
 const OurTeam = () => {
@@ -211,7 +127,7 @@ const OurTeam = () => {
       spaceBetween: 30,
     },
     1601: {
-      slidesPerView: 5,
+      slidesPerView: 4,
       spaceBetween: 30,
     },
   };
@@ -221,8 +137,8 @@ const OurTeam = () => {
       <Container ref={containerRef}>
         <SectionHeading
           sx={styles.heading}
-          title="Meet our superheros"
-          description="Build an incredible workplace and grow your business with Gusto’s all-in-one platform with amazing contents."
+          title="Meet our Team"
+          description="We are a team of passionate and enthusiastic designers and developers."
         />
       </Container>
       <Box

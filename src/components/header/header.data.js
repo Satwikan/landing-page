@@ -11,10 +11,10 @@ export default [
     path: 'roadmap',
     label: 'Roadmap',
   },
-  // {
-  //   path: 'team',
-  //   label: 'Team',
-  // },
+  {
+    path: 'team',
+    label: 'Team',
+  },
   {
     path: 'why-us',
     label: 'Why Us',

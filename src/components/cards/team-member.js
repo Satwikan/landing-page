@@ -1,7 +1,7 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx, Flex, Box, Image, Text, Heading, Link } from 'theme-ui';
-import { FaTwitter, FaGithub, FaDribbble } from 'react-icons/fa';
+import { FaTwitter, FaGithub, FaLinkedin, FaFacebook,} from 'react-icons/fa';
 
 const TeamMember = ({ member }) => {
   return (
@@ -16,16 +16,23 @@ const TeamMember = ({ member }) => {
           {member?.socialLinks?.map((social, index) => (
             <Link href={social?.link} key={index}>
               {social?.name === 'twitter' && (
-                <FaTwitter size="18px" color="#55ACEE" />
+                <FaTwitter size="25px" color="#55ACEE" />
               )}
               {social?.name === 'github' && (
-                <FaGithub size="18px" color="#161614" />
+                <FaGithub size="25px" color="#161614" />
               )}
-              {social?.name === 'dribbble' && (
-                <FaDribbble
-                  size="18px"
-                  color="#B2215A"
-                  style={{ backgroundColor: '#E74D89', borderRadius: 20 }}
+              {social?.name === 'linkedin' && (
+                <FaLinkedin
+                  size="25px"
+                  color="#0a66c2"
+                  style={{ backgroundColor: '#ffffff'}}
+                />
+              )}
+              {social?.name === 'facebook' && (
+                <FaFacebook
+                  size="25px"
+                  color="#0167e2"
+                  style={{ backgroundColor: '#ffffff'}}
                 />
               )}
             </Link>
@@ -45,11 +52,11 @@ const styles = {
   },
   about: {
     mt: [4],
-    textAlign: ['center', null, null, 'left'],
+    textAlign: ['center', null, null, null],
     h3: {
       color: 'heading',
       fontFamily: 'body',
-      fontSize: [3, null, 17, null, 4],
+      fontSize: [5, null, 20, null, 7],
     },
     p: {
       color: '#7589A1',
@@ -60,7 +67,7 @@ const styles = {
   socialLinks: {
     display: 'flex',
     alignItems: 'center',
-    justifyContent: ['center', null, null, 'left'],
+    justifyContent: ['center', null, null, null],
     mt: [3],
     a: {
       display: 'inline-flex',
