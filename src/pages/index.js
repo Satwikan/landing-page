@@ -16,7 +16,7 @@ import Chia from "../sections/chia";
 const routes = require("next-routes")();
 
 export default function IndexPage() {
-  routes.add("home", "/", "index.js").add("testnet", "/testnet", "testnet");
+  // routes.add("home", "/", "index.js").add("testnet", "/testnet", "testnet");
   return (
     <ThemeProvider theme={theme}>
       <Layout>
@@ -35,7 +35,7 @@ export default function IndexPage() {
         {/* <SubscribeUs /> */}
         <Connect />
       </Layout>
-      <WaWidget />
+      {/* <WaWidget /> */}
     </ThemeProvider>
   );
 }
