@@ -43,7 +43,7 @@ const data = [
     socialLinks: [
       {
         name: 'linkedin',
-        link: 'https://www.linkedin.com/in/satwik-anmol-1487a3191/',
+        link: 'https://www.linkedin.com/in/daluram-jat-86324936/',
       },
       {
         name: 'twitter',
@@ -63,7 +63,7 @@ const data = [
     socialLinks: [
       {
         name: 'linkedin',
-        link: 'https://www.linkedin.com/in/daluram-jat-86324936/',
+        link: 'https://www.linkedin.com/in/satwik-anmol-1487a3191/',
       },
       {
         name: 'github',
