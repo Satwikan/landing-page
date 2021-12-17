@@ -1,14 +1,14 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { IoMdMenu } from 'react-icons/io';
-import React, { useContext } from 'react';
-import { jsx, Box, Image } from 'theme-ui';
-import { Link } from 'react-scroll';
-import { DrawerContext } from 'contexts/drawer/drawer-context';
-import Drawer from 'components/drawer';
-import Logo from 'components/logo';
-import menuItems from './header.data';
-import close from 'assets/images/icons/close.png';
+import { IoMdMenu } from "react-icons/io";
+import React, { useContext } from "react";
+import { jsx, Box, Image } from "theme-ui";
+import { Link } from "react-scroll";
+import { DrawerContext } from "contexts/drawer/drawer-context";
+import Drawer from "components/drawer";
+import Logo from "components/logo";
+import menuItems from "./header.data";
+import close from "assets/images/icons/close.png";
 
 const DrawerNav = () => {
   const { state, dispatch } = useContext(DrawerContext);
@@ -16,13 +16,13 @@ const DrawerNav = () => {
   // Toggle drawer
   const toggleHandler = React.useCallback(() => {
     dispatch({
-      type: 'TOGGLE',
+      type: "TOGGLE",
     });
   }, [dispatch]);
 
   return (
     <Drawer
-      width="340px"
+      width="220px"
       placement="right"
       drawerHandler={
         <Box sx={styles.handler}>
@@ -57,6 +57,20 @@ const DrawerNav = () => {
               </Link>
             </Box>
           ))}
+          <a
+            style={{
+              color: "#527c25",
+              border: "#527c25 2px solid",
+              textDecoration: "none",
+              borderRadius: "5px",
+              paddingRight: "4px",
+              paddingLeft: "4px",
+            }}
+            href="https://dashboard.farmerpool.ml/"
+            target="_blank"
+          >
+            View Our DashBoard
+          </a>
         </Box>
       </Box>
     </Drawer>
@@ -66,76 +80,77 @@ export default DrawerNav;
 
 const styles = {
   handler: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexShrink: '0',
-    width: '26px',
-    cursor: 'pointer',
-    '@media screen and (min-width: 1024px)': {
-      display: 'none',
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    flexShrink: "0",
+    width: "26px",
+    cursor: "pointer",
+    "@media screen and (min-width: 1024px)": {
+      display: "none",
     },
   },
   drawer: {
-    backgroundColor: 'white',
-    width: '100%',
-    height: '100%',
+    backgroundColor: "white",
+    width: "100%",
+    height: "100%",
     outline: 0,
   },
   mask: {
     opacity: 0.2,
   },
   close: {
-    position: 'absolute',
+    position: "absolute",
     top: 35,
     right: 30,
-    zIndex: '1',
+    zIndex: "1",
   },
   closeButton: {
-    alignItems: 'center',
-    backgroundColor: 'transparent',
+    alignItems: "center",
+    backgroundColor: "transparent",
     border: 0,
-    cursor: 'pointer',
-    display: 'flex',
+    cursor: "pointer",
+    display: "flex",
     p: 0,
   },
   wrapper: {
-    height: '100%',
+    height: "100%",
     paddingTop: 30,
-    width: '100%',
+    width: "100%",
   },
   logo: {
     ml: 30,
     mb: 45,
   },
   navbar: {
-    listStyle: 'none',
+    textAlign: "center",
+    listStyle: "none",
     m: 0,
     p: 0,
-    'li > a': {
-      backgroundColor: 'transparent',
-      color: 'heading',
-      display: 'flex',
-      alignItems: 'center',
+    "li > a": {
+      backgroundColor: "transparent",
+      color: "heading",
+      display: "flex",
+      alignItems: "center",
       minHeight: 44,
       paddingLeft: 30,
-      position: 'relative',
-      transition: 'all 0.3s ease-in-out 0s',
-      '::before': {
-        backgroundColor: 'transparent',
+      position: "relative",
+      transition: "all 0.3s ease-in-out 0s",
+      "::before": {
+        backgroundColor: "transparent",
         content: `''`,
-        position: 'absolute',
-        height: '100%',
+        position: "absolute",
+        height: "100%",
         left: 0,
         top: 0,
         width: 2,
-        transition: 'all 0.3s ease-in-out 0s',
+        transition: "all 0.3s ease-in-out 0s",
       },
     },
-    '.active': {
-      backgroundColor: '#F8F8F8',
-      '::before': {
-        backgroundColor: 'primary',
+    ".active": {
+      backgroundColor: "#F8F8F8",
+      "::before": {
+        backgroundColor: "primary",
       },
     },
   },
